@@ -57,6 +57,20 @@ It is a high-content image-based assay for morphological profiling using multipl
 ### What type of data do we get out of it ?
 After running the profiling scripts to normalize the image features across plates and to create the per-well profiles, the output will be a morphological profile file in CSV format. Each row of this file represents a data vector for an individual plate and well, with each column containing the median for each of the ~1,500 image features across all the cells in that well. 
 
+### REFERENCES 
+#### Cell Profiler
+* watch: digest video : https://www.youtube.com/watch?v=waJXi6z6bwA&list=PLXSm9cHbSZBBy7JkChB32_e3lURUcT3RL
+* watch: tutorial : http://-%20https/www.youtube.com/watch?v=eriZdORpFxs
+
+#### Cell Painting
+* read: Bray et al. (2016) Nature Protocols https://www.nature.com/articles/nprot.2016.105
+* watch: Cell Painting basics https://www.biorxiv.org/content/10.1101/2022.07.13.499171v2
+* watch: Cell Painting applications (1 hr) https://www.youtube.com/watch?v=UfB1rzXcc-A. 
+
+#### Cell Painting + JUMP-MOA
+* read: JUMP consortium Cimini et al. (2022)  https://www.biorxiv.org/content/10.1101/2022.07.13.499171v2 
+
+
 
 ## Contents 
 ### 1. data_Jamali2023 Folder
