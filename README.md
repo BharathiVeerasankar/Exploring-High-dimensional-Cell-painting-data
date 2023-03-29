@@ -64,17 +64,20 @@ After running the profiling scripts to normalize the image features across plate
 
 ### 2. heatmap.ipnb 
   #### Heat maps of cell number per well in a "plate view" were created 
-    - 384 well = 16 rows x 24 columns
+  -  384 well = 16 rows x 24 columns
     
   #### Contains following heat maps 
-    - Cell count per well : Metadata_Count_Cells
-    - Cell area in well : Cells_AreaShape_Area
-    - Intensity of RNA in cell : Cells_Intensity_IntegratedIntensityEdge_RNA
+      - Cell count per well : Metadata_Count_Cells
+      - Cell area in well : Cells_AreaShape_Area
+      - Intensity of RNA in cell : Cells_Intensity_IntegratedIntensityEdge_RNA
   #### Inference 
   A well number J03 had a very high intensity of RNA, it was perturbated with romidepsin which is a HDAC inhibitor 
-      * The histone deacetylase inhibitors (HDAC) are a new class of cytostatic agents that inhibit the proliferation of tumor cells in culture and in vivo by inducing cell cycle arrest, differentiation and/or apoptosis.
-      * romidepsin specifically increases HIV transcriptional elongation. This increase in elongation accords with the increase in unspliced HIV RNA observed in the parent trial.
-      * Inhibition of HDACs could promote acetylation of the FUS RNA binding domain (RRM) and altering its RNA interactions resulting in FUS maintenance in the nucleus.
+    *  The histone deacetylase inhibitors (HDAC) are a new class of cytostatic agents that inhibit the proliferation of tumor cells in culture and in vivo by inducing cell cycle arrest, differentiation and/or apoptosis.
+    *  Romidepsin is known to inhibit RNA splicing, so it makes RNA intensity high in the well 
+
+    
+
+
 
     
     
