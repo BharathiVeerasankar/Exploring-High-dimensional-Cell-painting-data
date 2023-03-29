@@ -5,10 +5,10 @@ To learn techniques in exploratory data analysis using an existing data set from
 
 ## Introduction
 
-## Cell profiler 
-### What is cell profiler?
+## CellProfiler 
+### What is CellProfiler?
 - a free, open-source software program for image analysis
-- CellProfiler helps scientists to
+- [CellProfiler](https://cellprofiler.org) helps scientists to
     -  identify 
     - measure biological entities
     - process images ( at any scale) - from a small scale experiment to a large one 
