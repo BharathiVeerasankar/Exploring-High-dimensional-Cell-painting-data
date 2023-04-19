@@ -134,6 +134,67 @@ After running the profiling scripts to normalize the image features across plate
 - Lowest DNA granularity is due to perturbation with romidepsin, and they cluster together in all 3 plots 
 
 
+## 3. Yokogawa_20X_5Ch
+
+### i. UMAP_&_tSNE_Yokogawa_20X_5Ch_plate_b
+- there is a clear separate cluster for wells with high cell count in all 3 plots 
+- There is no repetition perturbations used in high cell count cluster, the perturbations are: 
+    * A12 quazinone 
+    * A09 SGX523 
+    * A11 DMSO 
+    * A03 ML324 
+    * A02 delta-Tocotrienol 
+    * A04 KH-CB19 
+    * A06 GDC-0879 
+    * A08 SHP099 
+    * A01 AZ191 
+    * A07 filgitinib 
+- all the wells which are present in this high cell count cluster are from row A 
+- Perturbation AMG900 gives highest RNA intensity and all the wells with this perturbation cluster together 
+- Lowest area is due to perturbation SCH-900776 and they cluster together in all 3 plots to an extend 
+- Highest area is due to perturbation ponatinib, SU3327 and THZ1 , they all cluster together in all 3 plots to an extend 
+- Lowest DNA granularity is due to perturbation with romidepsin, and they cluster together in all 3 plots 
+
+#### Same observations as seen in Yokogawa_10X 
+
+### ii. UMAP_&_tSNE_Yokogawa_20X_5Ch_plate_2
+- a distinct separate cluster seen in all 3 plots, with the following perturbations and wells: 
+    - B09 SU3327
+    - G24 SU3327
+    - O23 SU3327 
+    - P05 Compound 2 
+    - H20 valrubicin 
+    - I22 rheochrysidin 
+    - H22 pomalidomide 
+    - H24 GDC-0879 
+    - P06 EPZ015666
+    - E22 Compound 8 
+    - H24 GDC-0879 
+    - J24 CHIR-99021 
+    - H23 AMG-925 
+    - H21 halopemide 
+    - D20 Compound 1 
+    - G22 Compound 3 
+    - K24 DMSO 
+    - E23 AZD2014
+    - J21 DMSO 
+    - P24 Compound 6 
+    - E24 sirolimus 
+    - J23 IOX2 
+    - D21 Compound 1 
+    - G18 PFI-1 
+    - A09 SGX523 
+    - B11 rheochrysidin 
+    - B12 GW-3965
+    - M01 T-0901317
+    - G19 carmustine 
+    - G21 GW-3965
+    - E21 PS178990 
+     All cells in this separated cluster seem to have very high DNA granularity 
+- AMG900 has highest RNA intensity and clusters together 
+- H04 ponatinib, P03 ispinesib has only 1 cell count
+
+
 
 
 
