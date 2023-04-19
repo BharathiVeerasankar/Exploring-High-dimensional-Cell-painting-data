@@ -73,10 +73,9 @@ After running the profiling scripts to normalize the image features across plate
 
 
 ## Contents 
-### 1. data_Jamali2023 Folder
-  Contains all the source data files from
+## 1. Yokogawa_20X_data Folder
 
-### 2.   heatmap.ipnb 
+### i.   heatmap.ipnb 
 #### Heat maps of cell number per well in a "plate view" were created 
 - 384 well = 16 rows x 24 columns
     
@@ -90,7 +89,7 @@ After running the profiling scripts to normalize the image features across plate
 * The histone deacetylase inhibitors (HDAC) are a new class of cytostatic agents that inhibit the proliferation of tumor cells in culture and in vivo by inducing cell cycle arrest, differentiation and/or apoptosis.
 * Romidepsin is known to inhibit RNA splicing, so it makes RNA intensity high in the well 
 
-### 3. zscore.ipynb 
+## ii. zscore.ipynb 
 * zscore normalisation of 1.csv data was done, and it was compared with normalisation.csv data to see if in the data they have indeed used zscore normalisation technique to normalise the data. 
 * #### zscore normalized value = (x – μ) / σ
     * where:
@@ -105,13 +104,37 @@ After running the profiling scripts to normalize the image features across plate
         * ddof : Degree of freedom correction for Standard Deviation.
         * Results : Z-score of the input data.
 
-### 4. PCA.ipynb 
+### iii. PCA.ipynb 
 * Principal Component Analysis technique was performed on the Jamali dataset using sklearn.decomposition.pca . 
 * PCA with 3 principal components, 2 principal components and single principal component were plotted. 
 * Percentage of variance explained by each of the selected components were calculated using explained_variance_ratio_, where the sum of ratios will be 1.0 
 #### Inference 
 * 22% of variance explained with PCA1 (40% with PCA1+PCA2)
 * much of the data points lie along one line in PCA1 vs. PCA2 plane
+
+## 2. Yokogawa_10X_data 
+
+### i. UMAP_&_tSNE_Yokogawa_10X
+- there is a clear separate cluster for wells with high cell count in all 3 plots 
+- There is no repetition perturbations used in high cell count cluster, the perturbations are: 
+    * A12 quazinone 
+    * A09 SGX523 
+    * A11 DMSO 
+    * A03 ML324 
+    * A02 delta-Tocotrienol 
+    * A04 KH-CB19 
+    * A06 GDC-0879 
+    * A08 SHP099 
+    * A01 AZ191 
+    * A07 filgitinib 
+- all the wells which are present in this high cell count cluster are from row A 
+- Perturbation AMG900 gives highest RNA intensity and all the wells with this perturbation cluster together 
+- Lowest area is due to perturbation SCH-900776 and they cluster together in all 3 plots to an extend 
+- Highest area is due to perturbation ponatinib, SU3327 and THZ1 , they all cluster together in all 3 plots to an extend 
+- Lowest DNA granularity is due to perturbation with romidepsin, and they cluster together in all 3 plots 
+
+
+
 
 
 
