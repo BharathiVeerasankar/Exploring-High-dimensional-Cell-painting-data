@@ -112,6 +112,46 @@ After running the profiling scripts to normalize the image features across plate
 * 22% of variance explained with PCA1 (40% with PCA1+PCA2)
 * much of the data points lie along one line in PCA1 vs. PCA2 plane
 
+### iv. UMAP_&_tSNE.ipynb
+- there is a separate cluster in tSNE and UMAP alone, not in PCA with following perturbations 
+    - H05 : EPZ015666
+    - K06 : selumetinib
+    - L04 : orphenadrine
+    - H03: dosulepin
+    - I07 : SHP 99
+    - J01 : DMSO
+    - J07 : RGFP966
+    - K05 : P5091
+    - K02 : homochlorcyclizine
+    - I05: GDC-0879
+    - J06 : UNC0642
+    - J02: Compound8
+    - I02: AZ191
+    - J05: AZD7545
+    - K04 : pomalidomide
+    - K03 : CHIR-99021
+    - I04: ML324
+    - I03 : KH-CB19
+    - J04: BIX-02188
+
+- following wells have high RNA intensity:
+    - L23: RG7112
+    - H20: valrubicin
+    - D23: valrubicin
+    - C01: valrubicin
+    - G02: valrubicin
+    - E18: Compound2
+    - E16: ispinesib
+    - L10: Compound2
+    - P05: Compound2
+    - A17: Compound2
+    - K07: AMG900
+    - B19 : AMG900
+    - O08: AMG900
+    - F16: AMG900
+![image](https://user-images.githubusercontent.com/127401579/233051749-91f9cd55-b068-4e90-b43c-5e85ed5e7418.png)
+
+
 ## 2. Yokogawa_10X_data 
 
 ### i. UMAP_&_tSNE_Yokogawa_10X
@@ -190,9 +230,11 @@ After running the profiling scripts to normalize the image features across plate
     - G19 carmustine 
     - G21 GW-3965
     - E21 PS178990 
+    ![image](https://user-images.githubusercontent.com/127401579/233050514-85d3fc98-46f7-44d5-acf3-b00802cc70cf.png)
      All cells in this separated cluster seem to have very high DNA granularity 
 - AMG900 has highest RNA intensity and clusters together 
 - H04 ponatinib, P03 ispinesib has only 1 cell count
+
 
 
 
