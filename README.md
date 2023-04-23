@@ -73,7 +73,8 @@ After running the profiling scripts to normalize the image features across plate
 
 
 ## Contents 
-## 1. Yokogawa_20X_data Folder
+## 1. Yokogawa_20X Folder
+####This folder contains 4 replicates of Yokogawa 20X data
 
 ### i.   heatmap.ipnb 
 #### Heat maps of cell number per well in a "plate view" were created 
@@ -112,7 +113,7 @@ After running the profiling scripts to normalize the image features across plate
 * 22% of variance explained with PCA1 (40% with PCA1+PCA2)
 * much of the data points lie along one line in PCA1 vs. PCA2 plane
 
-### iv. UMAP_&_tSNE.ipynb
+### iv. UMAP_&_tSNE-yokogawa_20X.ipynb
 - there is a separate cluster in tSNE and UMAP alone, not in PCA with following perturbations 
     - H05 : EPZ015666
     - K06 : selumetinib
@@ -150,6 +151,9 @@ After running the profiling scripts to normalize the image features across plate
     - O08: AMG900
     - F16: AMG900
 ![image](https://user-images.githubusercontent.com/127401579/233051749-91f9cd55-b068-4e90-b43c-5e85ed5e7418.png)
+### v. UMAP_&_tSNE-yokogawa_20X-replicate1.ipynb
+### vi. UMAP_&_tSNE-yokogawa_20X-replicate2.ipynb
+### vii. UMAP_&_tSNE-yokogawa_20X-replicate3.ipynb
 
 
 ## 2. Yokogawa_10X_data 
