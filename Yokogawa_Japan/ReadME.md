@@ -78,3 +78,19 @@ The orange wells here represent the orange cluster present in TSne and UMAP and 
 * All the replicate plates seem to replicate the results got in each other 
 * There is a ambiguous orange cluster in TSne and UMAP which is not present in PCA
 
+## 2. Yokogawa_Japan_40X Folder 
+#### This folder contains the 2 replicates of Yokogawa 40X data 
+
+### UMAP_&_tSNE-yokogawa_40X.ipynb
+This is the PCA-TSne-UMAP colored by Cell count in each well
+![image](https://github.com/BharathiVeerasankar/Exploring-High-dimensional-Cell-painting-data/assets/127401579/5b118b89-4265-4bcf-9952-da7e8e2c1d94)
+The blue colored wells represent the blue points in the PCA-TSne-UMAP plots which represent low cell count. It forms a obvious cluster only in TSne. 
+
+<img width="898" alt="image" src="https://github.com/BharathiVeerasankar/Exploring-High-dimensional-Cell-painting-data/assets/127401579/8767c279-b14b-4129-ba85-758344119e59">
+
+### UMAP_&_tSNE-yokogawa_20X_replicate1.ipynb
+This is the PCA-TSne-UMAP colored by Cell count in each well
+![image](https://github.com/BharathiVeerasankar/Exploring-High-dimensional-Cell-painting-data/assets/127401579/7210fa35-d1d4-4385-a0ec-bbf19eca15fa)
+The blue colored wells represent the blue points in the PCA-TSne-UMAP plots which represent low cell count. But it does not form a obvious cluster in any plot. 
+
+![image](https://github.com/BharathiVeerasankar/Exploring-High-dimensional-Cell-painting-data/assets/127401579/0b158a5c-3e69-4195-96f4-af322cc2cb92)
