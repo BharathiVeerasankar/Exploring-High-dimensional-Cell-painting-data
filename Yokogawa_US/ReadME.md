@@ -2,6 +2,8 @@
 ## 1. Yokogawa_US_10X_data 
 
 ### i. UMAP_&_tSNE_Yokogawa_10X
+![image](https://github.com/BharathiVeerasankar/Exploring-High-dimensional-Cell-painting-data/assets/127401579/ae8f0904-3560-4939-a174-2a7015d966ff)
+
 - there is a clear separate cluster for wells with high cell count in all 3 plots 
 - There is no repetition perturbations used in high cell count cluster, the perturbations are: 
     * A12 quazinone 
@@ -24,6 +26,8 @@
 ## 2. Yokogawa_US_20X_5Ch
 
 ### i. UMAP_&_tSNE_Yokogawa_20X_5Ch_plate_b
+![image](https://github.com/BharathiVeerasankar/Exploring-High-dimensional-Cell-painting-data/assets/127401579/e9335638-37a9-4de3-a432-5e22934948a0)
+
 - there is a clear separate cluster for wells with high cell count in all 3 plots 
 - There is no repetition perturbations used in high cell count cluster, the perturbations are: 
     * A12 quazinone 
@@ -45,6 +49,8 @@
 #### Same observations as seen in Yokogawa_10X 
 
 ### ii. UMAP_&_tSNE_Yokogawa_20X_5Ch_plate_2
+![image](https://github.com/BharathiVeerasankar/Exploring-High-dimensional-Cell-painting-data/assets/127401579/347da21c-cf76-4b92-9ae2-41bcb5d8e559)
+
 - a distinct separate cluster seen in all 3 plots, with the following perturbations and wells: 
     - B09 SU3327
     - G24 SU3327
@@ -84,6 +90,8 @@
 
 
 ## 3. Yokogawa_US_20X_5Ch_12Z
+![image](https://github.com/BharathiVeerasankar/Exploring-High-dimensional-Cell-painting-data/assets/127401579/5d04ee78-246c-47bf-9e79-d1697fc2303d)
+
 - there is a prominent separate cluster in tSNE and UMAP, and a not so prominent separate cluster in UMAP, with the following wells and perturbations 
     - P05 compound 2 
     - H20 valrubicin 
@@ -121,6 +129,8 @@
 - AMG900 has highest RNA intensity and clusters together 
 
 ## 4. Yokogawa_US_20X_6Ch_plate1
+![image](https://github.com/BharathiVeerasankar/Exploring-High-dimensional-Cell-painting-data/assets/127401579/72cb1aa2-4855-4dbc-838d-b8e818630f0c)
+
 - there is a separate cluster seen in tSNE and UMAP, with the following wells
     - G22 compound 3 
     - H21 halopemide 
@@ -144,6 +154,8 @@ This cluster has low RNA intensity ( but not the lowest)
 - Ponatinib, PF-477736, SU3327, THZ1 perturbations give the lowest cell count and all form a cluster in tSNE and UMAP, are away from the main cluster in PCA 
 
 ## 5. Yokogawa_US_20X_6Ch_plate2
+![image](https://github.com/BharathiVeerasankar/Exploring-High-dimensional-Cell-painting-data/assets/127401579/662c83c7-860c-4c4e-a738-bdf639f8df74)
+
 - there is a obvious separate cluster in all 3 plots, with the following wells and perturbation
     - B11 rheochrysidin 
     - B02 carmustine 
@@ -186,6 +198,8 @@ These wells have relatively low RNA intensity
 
 
 ## 6. Yokogawa_US_40X
+![image](https://github.com/BharathiVeerasankar/Exploring-High-dimensional-Cell-painting-data/assets/127401579/f6877e27-3687-4a52-8b68-a737dadd8f46)
+
  - There is a cluster in tSNE and UMAP containing following wells 
     - E21 PS178990 
     - G22 compound 3 
