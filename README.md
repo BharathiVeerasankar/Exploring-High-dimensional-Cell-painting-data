@@ -70,6 +70,21 @@ After running the profiling scripts to normalize the image features across plate
 #### Cell Painting + JUMP-MOA
 * read: [JUMP consortium Cimini et al. (2022)](https://www.biorxiv.org/content/10.1101/2022.07.13.499171v2) 
 
+## Contents 
+### (i) PCA_iris_example 
+* Replicated PCA using scikit Python from [Builtin Tutorial](https://builtin.com/machine-learning/pca-in-python)
+
+### (ii) Yokogawa_Japan 
+* Contains codes plotting heatmaps, PCA, UMAP and Tsne and analysis of cell painting data got from [Jamali et al](https://www.biorxiv.org/content/10.1101/2023.02.15.528711v1)
+* Contains 2 subfolders containing replicates of 20X data and 40X data and their analysis
+
+### (iii) Yokogawa_US 
+* Contains codes plotting heatmaps, PCA, UMAP and Tsne and analysis of cell painting data got from [Jamali et al](https://www.biorxiv.org/content/10.1101/2023.02.15.528711v1) 
+* Contains 6 subfolders containing different plates and their analysis 
+
+### (iv) UMAP&TSne_example.ipynb
+* Replicated UMAP and TSne plots using sklearn Python from [Towardsdatascience Tutorial](https://towardsdatascience.com/umap-variance-explained-b0eacb5b0801)
+
 
 
 
