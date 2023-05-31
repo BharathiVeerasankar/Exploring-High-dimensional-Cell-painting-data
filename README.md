@@ -59,101 +59,19 @@ After running the profiling scripts to normalize the image features across plate
 
 ### REFERENCES 
 #### Cell Profiler
-* watch: digest video : https://www.youtube.com/watch?v=waJXi6z6bwA&list=PLXSm9cHbSZBBy7JkChB32_e3lURUcT3RL
-* watch: tutorial : http://-%20https/www.youtube.com/watch?v=eriZdORpFxs
+* watch: [digest video](https://www.youtube.com/watch?v=waJXi6z6bwA&list=PLXSm9cHbSZBBy7JkChB32_e3lURUcT3RL)
+* watch: [tutorial](http://-%20https/www.youtube.com/watch?v=eriZdORpFxs)
 
 #### Cell Painting
-* read: Bray et al. (2016) Nature Protocols https://www.nature.com/articles/nprot.2016.105
-* watch: Cell Painting basics https://www.biorxiv.org/content/10.1101/2022.07.13.499171v2
-* watch: Cell Painting applications (1 hr) https://www.youtube.com/watch?v=UfB1rzXcc-A. 
+* read: [Bray et al. (2016) Nature Protocols](https://www.nature.com/articles/nprot.2016.105)
+* watch: [Cell Painting basics](https://www.biorxiv.org/content/10.1101/2022.07.13.499171v2)
+* watch: [Cell Painting applications](https://www.youtube.com/watch?v=UfB1rzXcc-A) 
 
 #### Cell Painting + JUMP-MOA
-* read: JUMP consortium Cimini et al. (2022)  https://www.biorxiv.org/content/10.1101/2022.07.13.499171v2 
+* read: [JUMP consortium Cimini et al. (2022)](https://www.biorxiv.org/content/10.1101/2022.07.13.499171v2) 
 
 
 
-## Contents 
-## 1. Yokogawa_20X Folder
-####This folder contains 4 replicates of Yokogawa 20X data
-
-### i.   heatmap.ipnb 
-#### Heat maps of cell number per well in a "plate view" were created 
-- 384 well = 16 rows x 24 columns
-    
-#### Contains following heat maps 
--  Cell count per well : Metadata_Count_Cells
-- Cell area in well : Cells_AreaShape_Area
-- Intensity of RNA in cell : Cells_Intensity_IntegratedIntensityEdge_RNA
-
-#### Inference 
-* A well number J03 had a very high intensity of RNA, it was perturbated with romidepsin which is a HDAC inhibitor \
-* The histone deacetylase inhibitors (HDAC) are a new class of cytostatic agents that inhibit the proliferation of tumor cells in culture and in vivo by inducing cell cycle arrest, differentiation and/or apoptosis.
-* Romidepsin is known to inhibit RNA splicing, so it makes RNA intensity high in the well 
-
-## ii. zscore.ipynb 
-* zscore normalisation of 1.csv data was done, and it was compared with normalisation.csv data to see if in the data they have indeed used zscore normalisation technique to normalise the data. 
-* #### zscore normalized value = (x – μ) / σ
-    * where:
-        * x: Original value
-        * μ: Mean of data
-        * σ: Standard deviation of data
-* #### scipy.stats.zscore(arr, axis=0, ddof=0) function was used for the same
-    * function computes the relative Z-score of the input data, relative to the sample mean and standard deviation.
-    * #### Parameters :
-        * arr : [array_like] Input array or object for which Z-score is to be calculated.
-        * axis : Axis along which the mean is to be computed. By default axis = 0.
-        * ddof : Degree of freedom correction for Standard Deviation.
-        * Results : Z-score of the input data.
-
-### iii. PCA.ipynb 
-* Principal Component Analysis technique was performed on the Jamali dataset using sklearn.decomposition.pca . 
-* PCA with 3 principal components, 2 principal components and single principal component were plotted. 
-* Percentage of variance explained by each of the selected components were calculated using explained_variance_ratio_, where the sum of ratios will be 1.0 
-#### Inference 
-* 22% of variance explained with PCA1 (40% with PCA1+PCA2)
-* much of the data points lie along one line in PCA1 vs. PCA2 plane
-
-### iv. UMAP_&_tSNE-yokogawa_20X.ipynb
-- there is a separate cluster in tSNE and UMAP alone, not in PCA with following perturbations 
-    - H05 : EPZ015666
-    - K06 : selumetinib
-    - L04 : orphenadrine
-    - H03: dosulepin
-    - I07 : SHP 99
-    - J01 : DMSO
-    - J07 : RGFP966
-    - K05 : P5091
-    - K02 : homochlorcyclizine
-    - I05: GDC-0879
-    - J06 : UNC0642
-    - J02: Compound8
-    - I02: AZ191
-    - J05: AZD7545
-    - K04 : pomalidomide
-    - K03 : CHIR-99021
-    - I04: ML324
-    - I03 : KH-CB19
-    - J04: BIX-02188
-
-- following wells have high RNA intensity:
-    - L23: RG7112
-    - H20: valrubicin
-    - D23: valrubicin
-    - C01: valrubicin
-    - G02: valrubicin
-    - E18: Compound2
-    - E16: ispinesib
-    - L10: Compound2
-    - P05: Compound2
-    - A17: Compound2
-    - K07: AMG900
-    - B19 : AMG900
-    - O08: AMG900
-    - F16: AMG900
-![image](https://user-images.githubusercontent.com/127401579/233051749-91f9cd55-b068-4e90-b43c-5e85ed5e7418.png)
-### v. UMAP_&_tSNE-yokogawa_20X-replicate1.ipynb
-### vi. UMAP_&_tSNE-yokogawa_20X-replicate2.ipynb
-### vii. UMAP_&_tSNE-yokogawa_20X-replicate3.ipynb
 
 
 ## 2. Yokogawa_10X_data 
